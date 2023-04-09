@@ -406,15 +406,71 @@
               </li>
             </ul>
           </div>
+          <div class="basement-form-wrap">
+            <form class="basement-form">
+              <p class="basement-text">Subscribe</p>
+              <input
+                type="email"
+                class="basement-form-input"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="basement-form-btn">Subscribe</button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
+
+    <!-- Modal window -->
+
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <batton type="button" data-modal-close class="modal-close-btn btn"
           ><svg class="modai-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-criss-cross"></use></svg
         ></batton>
+        <p class="contacts-form-title">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="contacts-form">
+          <input type="text" class="contacts-form-input" name="Name" required />
+          <input
+            type="tel"
+            class="contacts-form-input"
+            name="Phone"
+            required
+            pattern="^\+\d{2}\(\d{3}\)\d{3}-\d{2}-\d{2}$"
+            title="+38(044)555-55-55"
+          />
+          <input
+            type="email"
+            class="contacts-form-input"
+            name="Email"
+            required
+            pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+            title="nick@mail.com"
+          />
+
+          <textarea
+            class="contacts-form-message"
+            placeholder="Text input"
+            name="Message"
+          ></textarea>
+
+          <input
+            type="checkbox"
+            name="Checkbox"
+            class="contacts-form-checkbox"
+            value="accept Privacy Policy"
+          />
+
+          <p class="contacts-form-checkbox">
+            I accept the terms and conditions of the
+            <a href="#">Privacy Policy</a>
+          </p>
+
+          <button class="contacts-form-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
