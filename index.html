@@ -379,7 +379,7 @@
           </div>
           <div class="basement-left">
             <p class="footer-title">Social media</p>
-            <ul class="team_soc_list list">
+            <ul class="basement_soc_list list">
               <li class="footer_soc_item">
                 <a class="footer_soc_link link" href="#"
                   ><svg class="footer_soc_icon" width="16" height="16">
@@ -409,12 +409,19 @@
           <div class="basement-form-wrap">
             <form class="basement-form">
               <p class="basement-text">Subscribe</p>
-              <input
-                type="email"
-                class="basement-form-input"
-                placeholder="E-mail"
-              />
-              <button type="submit" class="basement-form-btn">Subscribe</button>
+              <div class="basement-form-cont">
+                <input
+                  type="email"
+                  class="basement-form-input"
+                  placeholder="E-mail"
+                />
+                <button type="submit" class="basement-form-btn button">
+                  <span class="basement-form-btn-text">Subscribe</span>
+                  <svg class="basement-form-btn-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-Frame-3"></use>
+                  </svg>
+                </button>
+              </div>
             </form>
           </div>
         </div>
@@ -501,11 +508,16 @@
           <label class="contacts-form-checkbox-desc"
             >I accept the terms and conditions of the
             <a href="#">Privacy Policy</a>
-            <input type="checkbox" class="contacts-form-checkbox" />
+            <input
+              type="checkbox"
+              name="privacy-policy"
+              value="true"
+              class="contacts-form-checkbox visually-hidden"
+            />
             <span class="checkbox-icon"></span>
           </label>
 
-          <button class="contacts-form-btn" type="submit">Send</button>
+          <button class="contacts-form-btn button" type="submit">Send</button>
         </form>
       </div>
     </div>

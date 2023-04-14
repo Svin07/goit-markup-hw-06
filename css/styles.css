@@ -452,10 +452,10 @@ body {
 .basement-box {
   display: flex;
   align-items: start;
-  gap: 120px;
 }
 
 .basement-left {
+  margin-left: 120px;
 }
 .footer-title {
   font-weight: 500;
@@ -465,7 +465,11 @@ body {
   color: var(--light-background);
   margin-bottom: 16px;
 }
-.team_soc_list {
+
+.basement_soc_list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
 
 .footer_soc_item {
@@ -491,6 +495,74 @@ body {
 .footer_soc_link:hover,
 .footer_soc_link:focus {
   background-color: #31d0aa;
+}
+
+.basement-form-wrap {
+  margin-left: 80px;
+}
+.basement-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin: 0;
+  color: var(--light-background);
+}
+
+.basement-form-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.basement-form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 24px;
+  padding: 0;
+  min-width: 165px;
+  height: 40px;
+  background-color: var(--logo-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--light-background);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.basement-form-input {
+  min-width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  color: #ffffff;
+  align-items: center;
+  letter-spacing: 0.04em;
+  background-color: var(--dark-color);
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.basement-form-input::placeholder {
+  color: #ffffff;
+}
+.basement-form-btn-text {
+  margin-right: 16px;
+}
+
+.basement-form-btn-icon {
+  fill: #ffffff;
 }
 
 /* Portfolio */
@@ -677,7 +749,7 @@ body {
   fill: var(--light-background);
 }
 
-modai-close-icon {
+.modai-close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -746,8 +818,9 @@ modai-close-icon {
   height: 120px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  padding-left: 16px;
+  padding: 8px 16px;
   margin-bottom: 16px;
+  resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -756,18 +829,52 @@ modai-close-icon {
   border-color: var(--logo-color);
 }
 
+.contacts-form-message::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.contacts-form-checkbox-desc {
+  position: relative;
+  padding-left: 24px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--subtle-text-color);
+}
+
 .checkbox-icon {
-  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   cursor: pointer;
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-contacts-form-checkbox:checked + .checkbox-icon {
-  background-color: #31d0aa;
+.contacts-form-checkbox:checked + .checkbox-icon {
+  background-image: url(../images/click_1_1.svg);
 }
 
 .contacts-form-btn {
+  min-width: 169px;
+  height: 56px;
+  background-color: var(--logo-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
